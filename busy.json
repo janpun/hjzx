@@ -1,0 +1,8 @@
+http://hjzx/api/set_busy/?token=1cfa7aa12ef0960274d940a3906075b2&exten=8001&date=2017_11_16&tel=13023589991
+{
+result: "1",
+setBuys: {
+Response: "Success",
+Message: "Updated database successfully"
+}
+}

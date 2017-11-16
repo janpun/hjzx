@@ -1,0 +1,6 @@
+http://hjzx/api/ping/?token=1cfa7aa12ef0960274d940a3906075b2&exten=8001&date=2017_11_16
+{
+UncallWorld: {
+Response: "UncallWorld:ping"
+}
+}

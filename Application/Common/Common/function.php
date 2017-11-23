@@ -2,7 +2,7 @@
 // 测试联通性
 function ping($text){
   try {
-  $client = new SoapClient('http://192.168.88.200/uncall_lib/index.php?wsdl');
+  $client = new SoapClient('http://192.168.1.200/uncall_lib/index.php?wsdl');
     $return = $client->UncallWorld($text);
     $json = xml_to_json($return);
     return $json;
@@ -14,7 +14,7 @@ function ping($text){
 // 拨打电话
 function on_click_call($exten, $tel, $action_id=""){
   try {
-  $client = new SoapClient('http://192.168.88.200/uncall_lib/index.php?wsdl');
+  $client = new SoapClient('http://192.168.1.200/uncall_lib/index.php?wsdl');
     $return = $client->OnClickCall($exten, $tel, $action_id);
     $json = xml_to_json($return);
     return $json;
@@ -26,7 +26,7 @@ function on_click_call($exten, $tel, $action_id=""){
 // 拨打电话
 function set_buys($agent){
   try {
-  $client = new SoapClient('http://192.168.88.200/uncall_lib/index.php?wsdl');
+  $client = new SoapClient('http://192.168.1.200/uncall_lib/index.php?wsdl');
     $return = $client->setBuys($agent);
     $json = xml_to_json($return);
     return $json;
@@ -38,7 +38,7 @@ function set_buys($agent){
 // 拨打电话
 function set_idle($agent){
   try {
-  $client = new SoapClient('http://192.168.88.200/uncall_lib/index.php?wsdl');
+  $client = new SoapClient('http://192.168.1.200/uncall_lib/index.php?wsdl');
     $return = $client->setIdle($agent);
     $json = xml_to_json($return);
     return $json;

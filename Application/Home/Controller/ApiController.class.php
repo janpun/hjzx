@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class ApiController extends CommonController {
+class ApiController extends Controller {
   //测试是否能ping通
   public function ping(){
     echo ping("ping");
